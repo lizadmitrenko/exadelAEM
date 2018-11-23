@@ -1,0 +1,7 @@
+*.iml
+.DS_Store/
+.idea/
+node/
+node_modules/
+out/
+public/

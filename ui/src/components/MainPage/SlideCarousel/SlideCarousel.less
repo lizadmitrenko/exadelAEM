@@ -1,0 +1,34 @@
+.carousel-wrapper {
+  min-width: 250px;
+  margin: 30px 19/6% 10px 19/6%;
+  word-wrap: break-word;
+  outline: 2px solid transparent;
+  transition: outline-offset .5s ease-out, outline .5s ease-out;
+
+  &:hover {
+    outline: 2px solid #b0b2b1;
+    outline-offset: 5px;
+  }
+
+  .carousel-item {
+    align-items: center;
+    font-size: 40px;
+  }
+}
+
+
+@media screen and (max-width: 655px) {
+  .carousel-wrapper {
+    height: 500px;
+    width: 95%;
+    .carousel-img-arrow {
+      top: 225px;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) and (min-width: 655px) {
+  .carousel-wrapper {
+    width: 43.6%;
+  }
+}
