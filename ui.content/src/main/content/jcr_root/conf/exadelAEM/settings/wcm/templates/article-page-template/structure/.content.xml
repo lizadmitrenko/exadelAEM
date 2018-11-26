@@ -5,9 +5,9 @@
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
         cq:lastModified="{Date}2018-11-12T12:27:31.743+03:00"
         cq:lastModifiedBy="admin"
-        cq:template="/conf/exadelAEM/settings/wcm/templates/landing-page-template"
+        cq:template="/conf/exadelAEM/settings/wcm/templates/article-page-template"
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="exadelAEM/components/structure/main-page">
+        sling:resourceType="exadelAEM/components/structure/article-page">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/responsivegrid">
