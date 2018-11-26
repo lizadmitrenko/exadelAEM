@@ -1,0 +1,14 @@
+<div class="popup-menu-container">
+    <dropdown-input target="dropdown-menu" data-default-value="{{var.defaultValue}}" data-input-value="{{var.inputValue}}" id="dropdown-input"
+                    class="trigger-wrapper">
+        <button data-popup-btn="1" class="popup-btn"></button>
+    </dropdown-input>
+    <dropdown-menu id="dropdown-menu" data-popup-content class="elements-wrapper">
+        <ul>
+            {{#each var.els}}
+                <li><a href="javascript: void 0" data-menu-item="{{id}}"
+                       {{#if active}}active-menu-item{{/if}}>{{item}}</a></li>
+            {{/each}}
+        </ul>
+    </dropdown-menu>
+</div>
