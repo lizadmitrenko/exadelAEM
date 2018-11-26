@@ -28,7 +28,6 @@ function preloadImage(target: HTMLImageElement) {
             break;
         default:
             target.src = target.dataset.src;
-
     }
 }
 
