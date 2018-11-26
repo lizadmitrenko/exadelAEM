@@ -1,0 +1,36 @@
+<slide-carousel class="carousel-wrapper">
+
+    <button data-slide-target="prev" class="carousel-controls arrow-previous-btn">
+        <svg class="svg-arrow" data-slide-target="prev">
+            <polyline points="21 30 8 15 21 0" fill="none"></polyline>
+        </svg>
+    </button>
+
+    <div data-slide-area>
+
+        {{#each var}}
+            <div data-slide-item class="carousel-item carousel-post {{#if active}}active-slide{{/if}}">
+                <a href="full-page.html" class="post-link">
+                    <div class="post-container">
+                        <h1 class="post-title">{{title}}</h1>
+                        <div class="parent-post-text">
+                            <p class="post-text">
+                                {{text}}
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        {{/each}}
+
+    </div>
+
+    <button data-slide-target="next" class="carousel-controls arrow-next-btn">
+        <svg class="svg-arrow" data-slide-target="next">
+            <polyline points="8 30 21 15 8 0" fill="none"></polyline>
+        </svg>
+    </button>
+
+    <slide-carousel-dots class="carousel-dots-wrapper"></slide-carousel-dots>
+</slide-carousel>
+

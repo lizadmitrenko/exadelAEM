@@ -1,0 +1,48 @@
+{
+  "var1": {
+    "inputValue": "Lang: $",
+    "defaultValue": "en",
+    "els": [
+      {
+        "active": "true",
+        "id": "1",
+        "item": "en"
+      },
+      {
+        "id": "2",
+        "item": "rus"
+      },
+      {
+        "id": "3",
+        "item": "do"
+      }
+    ]
+  },
+  "var2": {
+    "inputValue": "Lang: $",
+    "defaultValue": "en",
+    "els": [
+      {
+        "active": "true",
+        "id": "1",
+        "item": "en"
+      },
+      {
+        "id": "2",
+        "item": "rus"
+      },
+      {
+        "id": "3",
+        "item": "do"
+      },
+      {
+        "id": "4",
+        "item": "fr"
+      },
+      {
+        "id": "5",
+        "item": "ids"
+      }
+    ]
+  }
+}

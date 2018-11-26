@@ -1,0 +1,22 @@
+<article class="post">
+    <a class="post-link" href="full-page.html">
+        <div class="post-container">
+
+            <h1 class="post-title">{{var.title}}</h1>
+            <span class="post-date">{{var.date}}</span>
+
+            <div class="parent-post-text">
+                <object><a href="{{var.link}}">{{var.textLink}}</a></object>
+                {{#each var.text}}
+                <p>
+                    {{this}}
+                </p>
+                <p>&nbsp;</p>
+                {{/each}}
+            </div>
+            <!--<span class="read-pull-post">Читать статью ►</span>-->
+        </div>
+    </a>
+</article>
+
+
