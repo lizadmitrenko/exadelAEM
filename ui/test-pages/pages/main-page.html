@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Example</title>
+    <link rel="stylesheet" href="bundle.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script>
+        if(!window.customElements){
+            document.write('<script src="polyfill.js"><\/script>');
+        }
+    </script>
+</head>
+<body>
+{{{include 'header'}}}
+<main>
+    {{> main}}
+</main>
+{{{include 'footer' var='var1'}}}
+<script src="bundle.js"></script>
+</body>
+</html>

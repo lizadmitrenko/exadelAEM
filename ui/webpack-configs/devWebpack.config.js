@@ -1,22 +1,27 @@
 const path = require('path');
 const paths = require('../paths/config-paths');
-const CONTEXT_PATH = path.join(__dirname, '/../src/components/bundle-content');
-const TS_CONFIG = path.join(__dirname, '../tsconfig.json');
 
 const gulp = require('gulp');
+
 const webpackStream = require('webpack-stream');
-const named = require('vinyl-named');
+
+//TS PLUGINS
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const TSLintPlugin = require('tslint-webpack-plugin');
-const browserSync = require('browser-sync').create();
 
+// UTILS
+const named = require('vinyl-named');
+
+// DEV ENV
+const browserSync = require('browser-sync').create();
 
 module.exports = function () {
     let options = {
         mode: 'development',
-        context: CONTEXT_PATH,
+        context:  path.join(__dirname, paths.CONTEXT_PATH),
         entry: {
             bundle: './bundle.ts',
+            polyfill: './polyfill.ts',
         },
         devtool: 'inline-source-map',
         output: {
@@ -32,16 +37,16 @@ module.exports = function () {
                 exclude: /node_modules/,
                 options: {
                     transpileOnly: true,
-                    configFile: TS_CONFIG
+                    configFile: path.join(__dirname, paths.TS_CONFIG)
                 }
             }]
         },
         plugins: [
             new ForkTsCheckerWebpackPlugin({
-                tsconfig: TS_CONFIG
+                tsconfig: path.join(__dirname, paths.TS_CONFIG)
             }),
             new TSLintPlugin({
-                files: [paths.INPUT_BUNDLE + '/*.ts'],
+                files: [paths.SRC_DIR + '/*.ts'],
                 format: 'codeFrame'
             })
         ],
@@ -53,6 +58,5 @@ module.exports = function () {
         .pipe(named())
         .pipe(webpackStream(options))
         .pipe(gulp.dest(paths.OUTPUT_DIR))
-        .pipe(browserSync.stream())
+        .pipe(browserSync.stream());
 };
-
