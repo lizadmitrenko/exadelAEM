@@ -1,22 +1,38 @@
 <div class="full-post-wrapper">
     <div class="img-container">
         <picture>
-            <source media="(max-width: 800px)" data-src="{{var.img1}}"/>
-            <source media="(max-width: 1300px)" data-src="{{var.img2}}"/>
-            <img class="post-img" data-src="{{var.img3}}"/>
+            <source media="(max-width: 800px)" data-src="https://pp.userapi.com/c844617/v844617356/138686/gCAai7kwcog.jpg"/>
+            <source media="(max-width: 1300px)" data-src="https://pp.userapi.com/c844617/v844617988/136a60/xRc670D3laM.jpg"/>
+            <img class="post-img" data-src="https://pp.userapi.com/c851036/v851036516/4d2b8/gYEfzuN1TIo.jpg"/>
         </picture>
     </div>
     <div class="full-post-container">
-        {{{include 'post' var='var1'}}}
+        <article class="post">
+            <a class="post-link" href="exadelAEM/components/structure/article-page/body.html">
+                <div class="post-container">
+                    <h1 class="post-title">"Title1"</h1>
+                    <span class="post-date">"December 28, 2017"</span>
+                    <div class="parent-post-text">
+                        <object><a href=https://www.youtube.com/embed/WNeLUngb-Xg">"tutorial"</a></object>
+                        {{#each var.text}}
+                        <p>
+                            {{this}}
+                        </p>
+                        <p>&nbsp;</p>
+                        {{/each}}
+                    </div>
+                </div>
+            </a>
+        </article>
         <div class="post-line"></div>
-      <!--  <ul class="group-nav-btn">
+        <ul class="group-nav-btn">
             <li>
-                <a href="body.html" class="prev-btn">Назад</a>
+                <a href="exadelAEM/components/structure/article-page/body.html" class="prev-btn">Назад</a>
             </li>
             <li class="paging-separator">|</li>
             <li>
-                <a href="full-page.html" class="next-btn">Вперед</a>
+                <a href="exadelAEM/components/structure/article-page/body.html" class="next-btn">Вперед</a>
             </li>
-        </ul>-->
+        </ul>
     </div>
 </div>
