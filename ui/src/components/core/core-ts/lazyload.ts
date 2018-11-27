@@ -19,15 +19,18 @@ let observer = new IntersectionObserver(function (entries, observer) {
 }, config);
 
 function preloadImage(target: HTMLImageElement) {
-    switch (target.tagName) {
-        case 'IMG':
-            target.src = target.dataset.src;
-            break;
-        case 'SOURCE':
-            target.srcset = target.dataset.src;
-            break;
-        default:
-            target.src = target.dataset.src;
+    if (target.tagName === 'IMG') {
+        target.src = target.getAttribute('data-src');
+        target.onload = () => {
+            addClassToFullPost(target);
+        };
+    }
+}
+
+function addClassToFullPost(target: HTMLImageElement) {
+    const wrapper = target.closest('.full-post-wrapper');
+    if (wrapper && wrapper.querySelector('.full-post-container') && !wrapper.querySelector('.full-post-container').classList.contains('full-post-margin')) {
+        wrapper.querySelector('.full-post-container').classList.add('full-post-margin');
     }
 }
 
