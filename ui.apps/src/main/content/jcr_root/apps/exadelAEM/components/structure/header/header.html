@@ -1,15 +1,19 @@
 <header>
     <div class="header-container">
-        <div class="text-logo">LOGO</div>
-        <popup-menu class="popup-menu-container">
-            <popup-trigger>
-                <button data-popup-btn class="popup-btn">Lang: en</button>
-            </popup-trigger>
-            <popup-content data-popup-content class="elements-wrapper">
-                <a data-menu-item="1" class="active-menu-item">en</a>
-                <a data-menu-item="2">rus</a>
-                <a data-menu-item="3">do</a>
-            </popup-content>
-        </popup-menu>
+        <a href="exadelAEM/components/structure/article-page/body.html" class="text-logo">LOGO</a>
+        <div class="popup-menu-container">
+            <dropdown-input target="dropdown-menu" data-default-value="${properties.defaultValue}" data-input-value="${properties.inputValue}" id="dropdown-input"
+                            class="trigger-wrapper">
+                <button data-popup-btn="1" class="popup-btn"></button>
+            </dropdown-input>
+            <dropdown-menu id="dropdown-menu" data-popup-content class="elements-wrapper">
+                <ul>
+                    {{#each var.els}}
+                    <li><a href="javascript: void 0" data-menu-item="{{id}}"
+                           {{#if active}}active-menu-item{{/if}}>{{item}}</a></li>
+                    {{/each}}
+                </ul>
+            </dropdown-menu>
+        </div>
     </div>
 </header>
