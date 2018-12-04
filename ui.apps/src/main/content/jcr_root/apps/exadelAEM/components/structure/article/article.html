@@ -1,15 +1,15 @@
-<div class="full-post-wrapper" data-sly-use.component="article.js">
+<div class="full-post-wrapper">
     <div class="img-container">
         <img class="post-img" data-src="https://pp.userapi.com/c851036/v851036516/4d2b8/gYEfzuN1TIo.jpg"/>
     </div>
     <div class="full-post-container">
-        <article class="post">
-            <a class="post-link" href="exadelAEM/components/structure/article-page/body.html">
+        <article class="post" data-sly-use.article="article.js">
+            <a class="post-link" href="full-page.html">
                 <div class="post-container">
-                    <h1 class="post-title">${component.title}</h1>
-                    <span class="post-date">${component.}</span>
+                    <h1 class="post-title">${article.title}</h1>
+                    <span class="post-date">{{var.date}}</span>
                     <div class="parent-post-text">
-                        <object><a href="{{var.link}}">{{var.textLink}}</a></object>
+                        <object><a href="{{var.link}}">text</a></object>
                         {{#each var.text}}
                         <p>
                             {{this}}

@@ -2,61 +2,77 @@ package com.exadelAEM.core.models;
 
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
-import lombok.Getter;
-import lombok.Setter;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.sling.api.resource.Resource;
+import org.apache.sling.api.SlingHttpServletRequest;
+import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Required;
 import org.apache.sling.models.annotations.injectorspecific.ScriptVariable;
+import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 import javax.annotation.PostConstruct;
-import javax.inject.Inject;
 
 
-@Model(adaptables={Resource.class},
-        resourceType = {Card.RESOURCE_TYPE})
+@Model( adaptables = {SlingHttpServletRequest.class},
+        resourceType = {Card.RESOURCE_TYPE},
+        defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class Card {
 
     protected static final String RESOURCE_TYPE = "exadelAEM/components/content/card";
 
-    @Setter @Getter @Inject
+    @ValueMapValue
+    private String articlePath;
+
+    @ValueMapValue
+    private String titleOverride;
+
+    @ValueMapValue
+    private String description;
+
+    @ValueMapValue
     private String title;
-    @Setter @Getter @Inject
-    private  String link;
-    @Setter @Getter @Inject
-    private  String description;
-    @Setter @Getter @Inject
-    private String pubDate;
-    @Setter @Getter @Inject
-    private String guid;
+
 
     @ScriptVariable
     @Required
     private PageManager pageManager;
 
-    /***
-     * The underlying article page used to populate the card content.
-     */
     private Page articlePage;
 
     @PostConstruct
     public void init() {
 
-        if(StringUtils.isNotBlank(link)) {
-            articlePage = pageManager.getPage(link);
+        if(StringUtils.isNotBlank(articlePath)) {
+            articlePage = pageManager.getPage(articlePath);
         }
     }
 
-    @Override
-    public String toString() {
-        return "FeedMessage [title=" + title + ", guid=" + guid + ", description=" + description
-                + ", link=" + link
-                + "]";
+    public String getTitle() {
+        String title = null;
+
+        if (StringUtils.isNotBlank(titleOverride)) {
+            return titleOverride;
+        }
+
+        if (articlePage != null) {
+            title = StringUtils.isNotBlank(articlePage.getTitle()) ? articlePage.getTitle() : articlePage.getName();
+        }
+        return title;
+    }
+
+    public String getLinkPath() {
+
+        if (articlePage != null) {
+            return articlePage.getPath();
+        }
+        return null;
+    }
+
+    public String getDescription() {
+        return description;
     }
 
     public boolean isEmpty() {
-        //if the articlePage is non null then the component is not empty
         if (articlePage != null) {
             return false;
         }

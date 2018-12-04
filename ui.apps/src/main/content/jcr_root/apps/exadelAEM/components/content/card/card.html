@@ -1,0 +1,21 @@
+<article class="post" data-sly-use.card="com.exadelAEM.core.models.Card">
+    <a class="post-link" href="full-page.html">
+        <div class="post-container">
+
+            <h1 class="post-title"  data-sly-test.title="${card.title}>${title}</h1>
+            <span class="post-date">{{var.date}}</span>
+            <div class="parent-post-text">
+                <object><a href="${card.linkPath @ extension = 'html'}" data-sly-test.description="${card.description}">${description}</a></object>
+                {{#each var.text}}
+                <p>
+                    {{this}}
+                </p>
+                <p>&nbsp;</p>
+                {{/each}}
+            </div>
+            <!--<span class="read-pull-post">Читать статью ►</span>-->
+        </div>
+    </a>
+</article>
+
+
