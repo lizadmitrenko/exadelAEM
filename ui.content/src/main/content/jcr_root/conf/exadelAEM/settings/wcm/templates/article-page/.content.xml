@@ -2,11 +2,9 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
-        cq:lastModified="{Date}2019-01-23T15:53:08.241+03:00"
-        cq:lastModifiedBy="admin"
         cq:templateType="/conf/exadelAEM/settings/wcm/template-types/content-page"
         jcr:description="Simple content page for exadelAEM"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Content Page"
+        jcr:title="Article Page"
         status="enabled"/>
 </jcr:root>

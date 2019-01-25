@@ -1,25 +1,45 @@
 package com.exadelAEM.core.models;
 
-import com.day.cq.wcm.api.Page;
-import com.day.cq.wcm.api.PageManager;
+import javax.annotation.PostConstruct;
+
 import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
+import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Required;
+import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.apache.sling.models.annotations.injectorspecific.ScriptVariable;
+import org.apache.sling.models.annotations.injectorspecific.Self;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
+import org.apache.sling.models.factory.ModelFactory;
 
-import javax.annotation.PostConstruct;
+import com.adobe.cq.wcm.core.components.models.Image;
+import com.day.cq.wcm.api.Page;
+import com.day.cq.wcm.api.PageManager;
 
-
-@Model( adaptables = {SlingHttpServletRequest.class},
+@Model(
+        adaptables = {SlingHttpServletRequest.class},
         resourceType = {Card.RESOURCE_TYPE},
-        defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
-public class Card {
+        defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
+)
+public class Card  {
 
     protected static final String RESOURCE_TYPE = "exadelAEM/components/content/card";
 
+    //Relative location of Article Page to look for Hero Image
+    private static final String HERO_IMAGE_LOCATION = "root/image";
+
+    @Self
+    @Required
+    private SlingHttpServletRequest request;
+
+    @OSGiService
+    private ModelFactory modelFactory;
+
+    /**
+     * Represents the path to the article page
+     */
     @ValueMapValue
     private String articlePath;
 
@@ -27,16 +47,18 @@ public class Card {
     private String titleOverride;
 
     @ValueMapValue
-    private String description;
+    private boolean hideDescription;
 
-    @ValueMapValue
-    private String title;
-
-
+    /**
+     * A global variable made available by HTL script
+     */
     @ScriptVariable
     @Required
     private PageManager pageManager;
 
+    /***
+     * The underlying article page used to populate the card content.
+     */
     private Page articlePage;
 
     @PostConstruct
@@ -47,35 +69,80 @@ public class Card {
         }
     }
 
+    /***
+     * Order of resolution for the Title
+     *
+     * 1. Override title (set by author dialog) if Article Page found: 2. Article
+     * Page getTitle() 3. Article Page getName() otherwise return null
+     */
+
     public String getTitle() {
         String title = null;
 
+        //if a Title Override is found use that
         if (StringUtils.isNotBlank(titleOverride)) {
             return titleOverride;
         }
 
+        //Otherwise look for the title on the Page and fall back to the name.
         if (articlePage != null) {
             title = StringUtils.isNotBlank(articlePage.getTitle()) ? articlePage.getTitle() : articlePage.getName();
         }
         return title;
     }
 
-    public String getLinkPath() {
 
+    public String getDescription() {
+        //if hideDesciption not true
+        if (articlePage != null && !hideDescription) {
+            return articlePage.getDescription();
+        }
+        return null;
+    }
+
+
+    public String getLinkPath() {
+        //Use the articlePage's path to populate the link for the card
         if (articlePage != null) {
             return articlePage.getPath();
         }
         return null;
     }
 
-    public String getDescription() {
-        return description;
+
+    public String getImageSrc() {
+        if (articlePage != null) {
+
+            // get the resource of the hero image relative to the article page
+            Resource heroImgRes = articlePage.getContentResource(HERO_IMAGE_LOCATION);
+
+            // if the resource is found
+            if (heroImgRes != null) {
+                // Adapt the resource using the Core Image component
+                // com.adobe.cq.wcm.core.components.models.Image
+                // since the Core Image component can only be adapted from a
+                // SlingHttpServletRequest we need to use the
+                // modelFactory to wrap the request.
+                Image img = modelFactory.getModelFromWrappedRequest(request, heroImgRes, Image.class);
+
+                if (img != null) {
+                    // use Image model to return the src attribute
+                    return img.getSrc();
+                }
+            }
+
+        }
+        return null;
     }
 
+
     public boolean isEmpty() {
+        //if the articlePage is non null then the component is not empty
         if (articlePage != null) {
             return false;
         }
+
+        //if the articlePage cannot be found return true
         return true;
     }
 

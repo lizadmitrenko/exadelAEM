@@ -3,28 +3,12 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
-        cq:template="/conf/exadelAEM/settings/wcm/templates/content-page"
+        cq:template="/exadelAEM/components/templates/landingPage"
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="exadelAEM/components/structure/Page">
+        sling:resourceType="exadelAEM/components/structure/main-page">
         <root
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="wcm/foundation/components/responsivegrid">
-            <header
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="exadelAEM/components/content/header"
-                headerRoot="/content/exadelAEM/"
-                structureDepth="1"/>
-            <card
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="exadelAEM/components/content/card"
-                cardRoot="/content/exadelAEM/"/>
-            <responsivegrid
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/responsivegrid"
-                editable="{Boolean}true">
-                <cq:responsive jcr:primaryType="nt:unstructured"/>
-            </responsivegrid>
-        </root>
+            sling:resourceType="wcm/foundation/components/responsivegrid"/>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">
                 <phone

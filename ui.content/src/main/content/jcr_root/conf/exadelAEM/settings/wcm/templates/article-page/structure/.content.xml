@@ -3,27 +3,20 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
-        cq:template="/conf/exadelAEM/settings/wcm/templates/content-page"
+        cq:template="/exadelAEM/components/templates/articlePage"
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="exadelAEM/components/structure/Page">
+        sling:resourceType="exadelAEM/components/structure/article-page">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/responsivegrid">
             <header
+                jcr:created="{Date}2018-11-12T11:57:44.386+03:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-11-12T11:57:44.386+03:00"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="exadelAEM/components/content/header"
-                headerRoot="/content/exadelAEM/"
-                structureDepth="1"/>
-            <card
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="exadelAEM/components/content/card"
-                cardRoot="/content/exadelAEM/"/>
-            <responsivegrid
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/responsivegrid"
-                editable="{Boolean}true">
-                <cq:responsive jcr:primaryType="nt:unstructured"/>
-            </responsivegrid>
+                headerRoot="/content/exadelAEM/"/>
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">

@@ -17,6 +17,13 @@
 </sly>
 <title>${head.title}</title>
 
+<script>
+    if(!window.customElements){
+        document.write('<script src="/etc/clientlibs/newsboard/polyfill.js"><\/script>');
+    }
+</script>
+
 <link rel="stylesheet" type="text/css" href="/etc/clientlibs/newsboard/bundle.css">
+<sly data-sly-call="${clientLib.all @ categories='exadelAEM.base'}" />
 <!--/ JS bundle /-->
 <script type="javascript" src="/etc/clientlibs/newsboard/bundle.js"></script>
