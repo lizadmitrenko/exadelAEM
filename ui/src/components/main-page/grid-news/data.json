@@ -1,0 +1,349 @@
+{
+  "news": [
+    {
+      "data": [
+        {
+          "active": "true",
+          "title": "Title1",
+          "text": "1 \n TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript. \n TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title2",
+          "text": "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title3",
+          "text": "Types are optional, and type inference allows a few type \n annotations to make a big difference to the static verification of your code. \n Types let you define interfaces between software components and gain insights \n into the behavior of existing JavaScript libraries."
+        }
+      ]
+    },
+    {
+      "num": 1,
+      "card": true,
+      "title": "Title1",
+      "date": "December 28, 2017",
+      "link": "https://www.youtube.com/embed/WNeLUngb-Xg",
+      "textLink": "Tutorial",
+      "text": [
+        "of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript.",
+        "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser,  \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript applications. \n TypeScript compiles to clean,  \n simple JavaScript code which runs on any browser,  \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript applications.",
+        "Types are optional, and type inference allows a few type \n annotations to make a big difference to the static verification of your code. \n Types let you define interfaces between software components and gain insights \n into the behavior of existing JavaScript libraries.",
+        "TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript.",
+        "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript applications.",
+        "TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript."
+      ]
+    },
+    {
+      "data": [
+        {
+          "active": "true",
+          "title": "Title1",
+          "text": "1 \n TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript. \n TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title2",
+          "text": "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title3",
+          "text": "Types are optional, and type inference allows a few type \n annotations to make a big difference to the static verification of your code. \n Types let you define interfaces between software components and gain insights \n into the behavior of existing JavaScript libraries."
+        },
+        {
+          "title": "Title4",
+          "text": "1 \n TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript. \n TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title5",
+          "text": "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title6",
+          "text": "Types are optional, and type inference allows a few type \n annotations to make a big difference to the static verification of your code. \n Types let you define interfaces between software components and gain insights \n into the behavior of existing JavaScript libraries."
+        },
+        {
+          "title": "Title7",
+          "text": "Types are optional, and type inference allows a few type \n annotations to make a big difference to the static verification of your code. \n Types let you define interfaces between software components and gain insights \n into the behavior of existing JavaScript libraries."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "card": true,
+      "title": "Title2",
+      "date": "June 03, 2017",
+      "link": "https://www.youtube.com/embed/WNeLUngb-Xg",
+      "textLink": "Tutorial",
+      "text": [
+        "of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript.",
+        "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser,  \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer)."
+      ]
+    },
+    {
+      "num": 3,
+      "card": true,
+      "title": "Title3",
+      "date": "June 03, 2017",
+      "link": "https://www.youtube.com/embed/WNeLUngb-Xg",
+      "textLink": "Tutorial",
+      "text": [
+        "of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript.",
+        "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser,  \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer)."
+      ]
+    },
+    {
+      "data": [
+        {
+          "active": "true",
+          "title": "Title1",
+          "text": "1 \n TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript. \n TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title2",
+          "text": "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title3",
+          "text": "Types are optional, and type inference allows a few type \n annotations to make a big difference to the static verification of your code. \n Types let you define interfaces between software components and gain insights \n into the behavior of existing JavaScript libraries."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "card": true,
+      "title": "Title3",
+      "date": "June 03, 2017",
+      "link": "https://www.youtube.com/embed/WNeLUngb-Xg",
+      "textLink": "Tutorial",
+      "text": [
+        "of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript.",
+        "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser,  \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer)."
+      ]
+    },
+    {
+      "data": [
+        {
+          "active": "true",
+          "title": "Title10",
+          "text": "1 \n TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript. \n TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title3",
+          "text": "Types are optional, and type inference allows a few type \n annotations to make a big difference to the static verification of your code. \n Types let you define interfaces between software components and gain insights \n into the behavior of existing JavaScript libraries."
+        }
+      ]
+    },
+    {
+      "num": 1,
+      "card": true,
+      "title": "Title11",
+      "date": "December 28, 2017",
+      "link": "https://www.youtube.com/embed/WNeLUngb-Xg",
+      "textLink": "Tutorial",
+      "text": [
+        "of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript.",
+        "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser,  \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript applications. \n TypeScript compiles to clean,  \n simple JavaScript code which runs on any browser,  \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript applications.",
+        "Types are optional, and type inference allows a few type \n annotations to make a big difference to the static verification of your code. \n Types let you define interfaces between software components and gain insights \n into the behavior of existing JavaScript libraries.",
+        "TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript.",
+        "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript applications.",
+        "TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript."
+      ]
+    },
+    {
+      "data": [
+        {
+          "active": "true",
+          "title": "Title12",
+          "text": "1 \n TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript. \n TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title2",
+          "text": "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title3",
+          "text": "Types are optional, and type inference allows a few type \n annotations to make a big difference to the static verification of your code. \n Types let you define interfaces between software components and gain insights \n into the behavior of existing JavaScript libraries."
+        },
+        {
+          "title": "Title4",
+          "text": "1 \n TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript. \n TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title5",
+          "text": "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        }
+      ]
+    }, {
+      "data": [
+        {
+          "active": "true",
+          "title": "Title1",
+          "text": "1 \n TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript. \n TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title2",
+          "text": "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title3",
+          "text": "Types are optional, and type inference allows a few type \n annotations to make a big difference to the static verification of your code. \n Types let you define interfaces between software components and gain insights \n into the behavior of existing JavaScript libraries."
+        }
+      ]
+    },
+    {
+      "num": 1,
+      "card": true,
+      "title": "Title1",
+      "date": "December 28, 2017",
+      "link": "https://www.youtube.com/embed/WNeLUngb-Xg",
+      "textLink": "Tutorial",
+      "text": [
+        "of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript.",
+        "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser,  \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript applications. \n TypeScript compiles to clean,  \n simple JavaScript code which runs on any browser,  \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript applications.",
+        "Types are optional, and type inference allows a few type \n annotations to make a big difference to the static verification of your code. \n Types let you define interfaces between software components and gain insights \n into the behavior of existing JavaScript libraries.",
+        "TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript.",
+        "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript applications.",
+        "TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript."
+      ]
+    },
+    {
+      "data": [
+        {
+          "active": "true",
+          "title": "Title1",
+          "text": "1 \n TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript. \n TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title2",
+          "text": "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title3",
+          "text": "Types are optional, and type inference allows a few type \n annotations to make a big difference to the static verification of your code. \n Types let you define interfaces between software components and gain insights \n into the behavior of existing JavaScript libraries."
+        },
+        {
+          "title": "Title4",
+          "text": "1 \n TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript. \n TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title5",
+          "text": "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title6",
+          "text": "Types are optional, and type inference allows a few type \n annotations to make a big difference to the static verification of your code. \n Types let you define interfaces between software components and gain insights \n into the behavior of existing JavaScript libraries."
+        },
+        {
+          "title": "Title7",
+          "text": "Types are optional, and type inference allows a few type \n annotations to make a big difference to the static verification of your code. \n Types let you define interfaces between software components and gain insights \n into the behavior of existing JavaScript libraries."
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "card": true,
+      "title": "Title2",
+      "date": "June 03, 2017",
+      "link": "https://www.youtube.com/embed/WNeLUngb-Xg",
+      "textLink": "Tutorial",
+      "text": [
+        "of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript.",
+        "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser,  \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer)."
+      ]
+    },
+    {
+      "num": 3,
+      "card": true,
+      "title": "Title3",
+      "date": "June 03, 2017",
+      "link": "https://www.youtube.com/embed/WNeLUngb-Xg",
+      "textLink": "Tutorial",
+      "text": [
+        "of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript.",
+        "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser,  \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer)."
+      ]
+    },
+    {
+      "data": [
+        {
+          "active": "true",
+          "title": "Title1",
+          "text": "1 \n TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript. \n TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title2",
+          "text": "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title3",
+          "text": "Types are optional, and type inference allows a few type \n annotations to make a big difference to the static verification of your code. \n Types let you define interfaces between software components and gain insights \n into the behavior of existing JavaScript libraries."
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "card": true,
+      "title": "Title3",
+      "date": "June 03, 2017",
+      "link": "https://www.youtube.com/embed/WNeLUngb-Xg",
+      "textLink": "Tutorial",
+      "text": [
+        "of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript.",
+        "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser,  \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer)."
+      ]
+    },
+    {
+      "data": [
+        {
+          "active": "true",
+          "title": "Title10",
+          "text": "1 \n TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript. \n TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title3",
+          "text": "Types are optional, and type inference allows a few type \n annotations to make a big difference to the static verification of your code. \n Types let you define interfaces between software components and gain insights \n into the behavior of existing JavaScript libraries."
+        }
+      ]
+    },
+    {
+      "num": 1,
+      "card": true,
+      "title": "Title11",
+      "date": "December 28, 2017",
+      "link": "https://www.youtube.com/embed/WNeLUngb-Xg",
+      "textLink": "Tutorial",
+      "text": [
+        "of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript.",
+        "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser,  \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript applications. \n TypeScript compiles to clean,  \n simple JavaScript code which runs on any browser,  \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript applications.",
+        "Types are optional, and type inference allows a few type \n annotations to make a big difference to the static verification of your code. \n Types let you define interfaces between software components and gain insights \n into the behavior of existing JavaScript libraries.",
+        "TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript.",
+        "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript applications.",
+        "TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript."
+      ]
+    },
+    {
+      "data": [
+        {
+          "active": "true",
+          "title": "Title12",
+          "text": "1 \n TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript. \n TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title2",
+          "text": "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title3",
+          "text": "Types are optional, and type inference allows a few type \n annotations to make a big difference to the static verification of your code. \n Types let you define interfaces between software components and gain insights \n into the behavior of existing JavaScript libraries."
+        },
+        {
+          "title": "Title4",
+          "text": "1 \n TypeScript starts from the same syntax and semantics that millions \n of JavaScript developers know today. Use existing JavaScript code, \n incorporate popular JavaScript libraries, and call TypeScript code from JavaScript. \n TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        },
+        {
+          "title": "Title5",
+          "text": "TypeScript compiles to clean, \n simple JavaScript code which runs on any browser, \n in Node.js, or in any JavaScript engine that supports ECMAScript 3 (or newer). \n Types enable JavaScript developers to use highly-productive development tools \n and practices like static checking and code refactoring when developing JavaScript \n applications."
+        }
+      ]
+    }
+  ]
+}

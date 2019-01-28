@@ -1,0 +1,20 @@
+<grid-news class="grid-news"
+           data-el-attr="grid-el"
+           data-url="/rest/main-page.html"
+           data-next-els-count="5"
+           debug-delay="700"
+           data-count={{news.length}}>
+    <div class="grid-container" data-news-container>
+        {{> dynamic-card var=news.[0].data}}
+        {{> post var=news.[1]}}
+        {{> dynamic-card var=news.[2].data}}
+        {{> post var=news.[3]}}
+        {{> post var=news.[4]}}
+        {{> dynamic-card var=news.[5].data}}
+        {{> post var=news.[6]}}
+    </div>
+    <div class="container-loader">
+        <div class="loader"></div>
+    </div>
+    <div data-grid-marker></div>
+</grid-news>

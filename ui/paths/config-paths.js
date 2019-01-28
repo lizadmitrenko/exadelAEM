@@ -6,3 +6,4 @@ module.exports.OUTPUT_DIR  = 'public';
 module.exports.INPUT_JS = 'src/components/**/**/*.js';
 module.exports.CONTEXT_PATH = '../src/bundles';
 module.exports.TS_CONFIG = '../tsconfig.json';
+module.exports.URL_SERVER = 'http://localhost:8000';

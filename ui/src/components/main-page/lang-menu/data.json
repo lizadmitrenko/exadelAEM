@@ -4,17 +4,12 @@
     "defaultValue": "en",
     "els": [
       {
-        "active": "true",
         "id": "1",
         "item": "en"
       },
       {
         "id": "2",
-        "item": "rus"
-      },
-      {
-        "id": "3",
-        "item": "do"
+        "item": "ru"
       }
     ]
   },
@@ -23,13 +18,12 @@
     "defaultValue": "en",
     "els": [
       {
-        "active": "true",
         "id": "1",
         "item": "en"
       },
       {
         "id": "2",
-        "item": "rus"
+        "item": "ru"
       },
       {
         "id": "3",
