@@ -1,0 +1,7 @@
+{{#each news}}
+    {{#if this.data}}
+        {{> dynamic-card var=this.data}}
+    {{else}}
+        {{> post var=this}}
+    {{/if}}
+{{/each}}

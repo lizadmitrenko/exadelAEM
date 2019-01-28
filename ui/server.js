@@ -54,29 +54,28 @@ function renderFile(res, pathFile) {
     res.render(pathFile.replace(/\.html$/i, '').replace(/^(\/|\\)/i, ''));
 }
 
-
 function renderDir(res, pathDir, fsPath) {
     const fileNames = fs.readdirSync(fsPath);
-    let indexRenderDir = null;
-    fileNames.forEach((fn, index) => {
-        if (/^_/.test(fn)) {
-            indexRenderDir = index;
-        }
-    });
-    fileNames.splice(indexRenderDir, 1);
-    const links = fileNames.map((fn) => ({
-        name: fn,
-        link: path.join(pathDir, fn)
-    }));
+    const links = fileNames.filter((fn) => !/^_/.test(fn))
+        .map((fn) => ({
+            name: fn,
+            link: path.join(pathDir, fn)
+        }));
     res.render('__renderdir', {
         links
     });
 }
 
+app.use('/assets', express.static('./assets'));
+
+const restRouter = express.Router();
+
+app.use('/rest', restRouter);
+
 app.get('/*', function (req, res, next) {
     const pathname = url.parse(req.url).pathname;
 
-    if (/\.(js|css|ico|png|jpg|gif|woff|woff2)$/.test(pathname)) {
+    if (/\.(js|css|ico|png|jpg|gif|woff|woff2|svg)$/.test(pathname)) {
         next();
         return;
     }
@@ -96,6 +95,18 @@ app.get('/*', function (req, res, next) {
     }
     next();
 });
+
+restRouter.get('/main-page.html/elsCount', function (req, res) {
+    const newsData = JSON.parse(fs.readFileSync('./src/components/main-page/grid-news/data.json'));
+    const params = Object.assign({
+        start: 0,
+        count: 3
+    }, req.query);
+    res.render('__news-list', {
+        news: newsData.news.slice(params.start, params.count)
+    })
+});
+
 app.listen(8080, function () {
     console.log('Example app listening on port 8080!');
 });

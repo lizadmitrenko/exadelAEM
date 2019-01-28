@@ -19,14 +19,23 @@ class PopupMenu extends HTMLElement {
         return this.getAttribute('active-class') || 'active-menu';
     }
 
+    get active(): boolean {
+        return this.classList.contains(this.activeClass);
+    }
+
     set active(value: boolean) {
+        if (this.active === value) return;
         this.type === 'modal' ? this.classList.toggle('modal-popup') : null;
         value ? this.classList.add(this.activeClass) : this.classList.remove(this.activeClass);
         this.setAttribute('aria-hidden', String(!value));
+        this.triggerChangeEvent();
     }
 
-    get active(): boolean {
-        return this.classList.contains(this.activeClass);
+    private triggerChangeEvent() {
+        const event = new CustomEvent('pm-changed', {
+            bubbles: true,
+        });
+        this.dispatchEvent(event);
     }
 }
 

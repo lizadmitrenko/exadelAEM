@@ -2,13 +2,12 @@ import VideoService from "./video-service";
 
 class VideoTrigger {
 
-    constructor(link: HTMLElement) {
-        link.addEventListener('click', (event) => this._onShow(event), false);
-        this.btnHide.addEventListener('click', () => VideoService.hide());
+    constructor(public link: HTMLElement) {
+        link.addEventListener('click', this._onShow, false);
     }
 
-    get btnHide(): HTMLElement {
-        return document.querySelector('.hide-video-btn') as HTMLElement;
+    destroy() {
+        this.link.removeEventListener('click', this._onShow, false);
     }
 
     private _onShow(event: MouseEvent) {

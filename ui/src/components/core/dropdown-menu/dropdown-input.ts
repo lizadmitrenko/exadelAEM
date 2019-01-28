@@ -14,12 +14,13 @@ class DropdownInput extends PopupTrigger {
     }
 
     get value(): string {
-        const customInputValue = this.dataset.inputValue.replace('$', "");
+        const cleanText = this.dataset.inputValue.replace(/<\/?[^>]+(>|$)/g, "");
+        const customInputValue = cleanText.replace('$', "");
         return this.innerText.replace(customInputValue, "");
     }
 
     set value(value: string) {
-        this.btn.innerText = this.dataset.inputValue.replace('$', value);
+        this.btn.innerHTML = this.dataset.inputValue.replace('$', value);
     }
 
     public connectedCallback() {
@@ -31,7 +32,16 @@ class DropdownInput extends PopupTrigger {
     public triggerInput(value: string) {
         if (this.value !== value) {
             this.value = value;
+            this.triggerValueChange(value);
         }
+    }
+
+    private triggerValueChange(value: string) {
+        const event = new CustomEvent('dd-inputchanged', {
+            bubbles: true,
+            detail: { value: value, elem: this}
+        });
+        this.dispatchEvent(event);
     }
 }
 

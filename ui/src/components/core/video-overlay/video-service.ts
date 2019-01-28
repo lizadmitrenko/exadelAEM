@@ -13,8 +13,10 @@ class VideoService {
         instance = this;
 
         instance._popup = instance._createElement() as PopupMenu;
+        instance.bindEvents();
 
         document.querySelector('body').appendChild(instance._popup);
+        this._popup.addEventListener('click', () => this.hide());
     }
 
     get iframe(): HTMLIFrameElement {
@@ -51,6 +53,14 @@ class VideoService {
             this.iframe.src = "";
             this._popup.active = false;
         }
+    }
+
+    private bindEvents() {
+        this._btnHide.addEventListener('click', () => VideoService.hide());
+    }
+
+    get _btnHide(): HTMLElement {
+        return this._popup.querySelector('.hide-video-btn') as HTMLElement;
     }
 
     private _createElement(): HTMLElement {
